@@ -1,5 +1,5 @@
 let numerosSorteados = [];
-let numeroLimite = 10; // O NÚMERO LIMITE É USADO PARA DEFINIR O LIMITE DE NÚMEROS SORTEADOS, QUANDO BATER ESSE LIMITE ZERA, A FUNÇÃO TEM QUE SER CHAMADA ANTES DA FUNÇÃO GERAR NÚMERO ALEATÓRIO PARA VER SE O LIMITE FOI BATIDO, SE SIM, ZERA A LISTA DE NÚMEROS SORTEADOS
+let numeroLimite = 10000; // O NÚMERO LIMITE É USADO PARA DEFINIR O LIMITE DE NÚMEROS SORTEADOS, QUANDO BATER ESSE LIMITE ZERA, A FUNÇÃO TEM QUE SER CHAMADA ANTES DA FUNÇÃO GERAR NÚMERO ALEATÓRIO PARA VER SE O LIMITE FOI BATIDO, SE SIM, ZERA A LISTA DE NÚMEROS SORTEADOS
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -11,7 +11,7 @@ function exibirTextoNaTela(tag, texto) {
 
 function exibirMensagemInicial() {
     exibirTextoNaTela('h1', 'Jogo do número secreto');
-    exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
+    exibirTextoNaTela('p', `Escolha um número entre 1 e ${numeroLimite}`);
 }
 
 exibirMensagemInicial();
